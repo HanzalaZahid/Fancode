@@ -5,8 +5,12 @@
     box-sizing: border-box;
     font-family: 'Noto Sans Display';
 }
-@import url(../assets/fonts/NOTO/stylesheet.css);;
-@import url(../fonts/NOTO/stylesheet.css);;
+@import url(../assets/fonts/NOTO/stylesheet.css);
+@import url(../fonts/NOTO/stylesheet.css);
+section
+{
+    display: grid;
+}
 .wrapper
 {
     width: 1024px;

@@ -8,6 +8,10 @@
   font-family: "Noto Sans Display";
 }
 
+section {
+  display: grid;
+}
+
 .wrapper {
   width: 1024px;
   justify-self: center;
@@ -31,4 +35,4 @@
 
 .page_content {
   padding-top: 57.3px;
-}
+}/*# sourceMappingURL=style.css.map */

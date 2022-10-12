@@ -14,6 +14,7 @@ header {
   width: 100%;
   top: 0px;
   left: 0px;
+  z-index: 100;
 }
 header .wrapper {
   display: -webkit-box;
@@ -148,6 +149,7 @@ footer {
   font-size: 14px;
   text-align: center;
   font-weight: 400;
+  margin-top: 100px;
 }
 @media screen and (max-width: 732px) {
   footer {
@@ -338,4 +340,4 @@ footer .bottom ul a {
 }
 .header_mobile_nav ul a span {
   font-size: 12px;
-}
+}/*# sourceMappingURL=header_footer.css.map */
