@@ -1,0 +1,175 @@
+$separator_color: rgb(220, 220, 220);
+.featured_matches
+{
+    .slider
+    {
+        list-style-type: none;
+        .slide
+        {
+            height: 200px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid black;
+            .card
+            {
+                position: relative;
+            }
+            a
+            {
+                text-decoration: none;
+            }
+            .thumbnail
+            {
+                height: 50%;
+                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../images/feature_card_background.webp");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 12px;
+                padding-bottom: 28px;
+                color: white;
+                
+                .match_title
+                {
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.4px;
+                    text-align: center;
+                    width: 100%;
+                }
+                .live
+                {
+                    background-color: rgb(255, 220, 204);
+                    color: rgb(255, 80, 0);
+                    font-size: 11px;
+                    border-radius: 2px;
+                    padding: 1px 4px;
+                }
+            }
+            .team_score
+            {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 12px;
+                padding-top: 30px;
+                .team
+                {
+                    display: flex;
+                    align-items: center;
+                    .logo
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .image
+                        {
+                            height: 32px;
+                            width: 32px;
+                            img
+                            {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .name
+                        {
+                            font-size: 10px;
+                            color: black;
+                        }
+                    }
+                    .results
+                    {
+                        
+                        .score
+                        {
+                            display: flex;
+                            align-items: center;
+                            color: black;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                        .overs
+                        {
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            color: rgb(153, 153, 153);
+                        }
+                    }
+                }
+                .vs
+                {
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    .icon
+                    {
+                        font-size: 10px;
+                        color: white;
+                        background-color: rgb(220, 220, 220);
+                        height: 16px;
+                        width: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 12px;
+                    }
+                    .line
+                    {
+                        width: 1px;
+                        height: 40px;
+                        background-color: rgb(220, 220, 220);
+                    }
+                }
+                .team2
+                {
+                    .results
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        margin-right: 12px;
+                    }
+                }
+                .team1
+                {
+                    .results
+                    {
+                        margin-left: 12px;
+                    }
+                }
+            }
+            .score_card_label
+            {
+                background-color: white;
+                color: rgb(255, 80, 0);
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 1.4px;
+                padding: 6px 12px;
+                border-radius: 18px;
+                position: absolute;
+                top: -16px;
+                right: 0px;
+                left: 0px;
+                margin: auto;
+                width: 120px;
+                text-align: center;
+                box-shadow: rgb(0 0 0 / 15%) 0px 2px 6px 0px;
+            }
+            .match_status
+            {
+                font-size: 12px;
+                color: black;
+                text-align: center;
+            }
+        }
+    }
+}
