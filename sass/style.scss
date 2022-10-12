@@ -1,0 +1,28 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Display';
+}
+@import url(../assets/fonts/NOTO/stylesheet.css);;
+@import url(../fonts/NOTO/stylesheet.css);;
+.wrapper
+{
+    width: 1024px;
+    justify-self: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    @media screen and (max-width: 1104px)
+    {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and (max-width: 772px)
+    {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
