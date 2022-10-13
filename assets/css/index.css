@@ -1,3 +1,76 @@
+@charset "UTF-8";
+.slick-arrow {
+  height: 48px !important;
+  width: 48px !important;
+  background-color: white !important;
+  border-radius: 50% !important;
+  color: rgb(255, 80, 0) !important;
+  z-index: 3;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px 0px;
+  top: 100px !important;
+}
+.slick-arrow::after {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 32px;
+}
+
+.slick-prev {
+  left: -17px !important;
+}
+.slick-prev::after {
+  content: "‹";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 32px;
+}
+
+.slick-next {
+  right: -17px !important;
+}
+.slick-next::after {
+  content: "›";
+  position: absolute;
+  right: 18px;
+  top: 20px;
+  font-size: 32px;
+}
+
+.featured_matches {
+  position: relative;
+}
+.featured_matches .background {
+  background-color: rgb(0, 18, 64);
+  height: 167px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -2;
+}
+.featured_matches .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+.featured_matches .header .title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.featured_matches .header .feature_slider_dots .slick-dots {
+  position: unset;
+  color: white;
+}
+.featured_matches .header .feature_slider_dots .slick-dots button::before {
+  color: white;
+}
 .featured_matches .slider {
   list-style-type: none;
 }
@@ -5,6 +78,7 @@
   position: relative;
   display: grid;
   height: 226px;
+  margin: 0px 8px;
 }
 .featured_matches .slider .slide .card {
   height: 200px;
@@ -13,7 +87,6 @@
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
   position: relative;
   display: block;
-  background-color: white;
   z-index: 10;
 }
 .featured_matches .slider .slide a {
@@ -66,7 +139,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0px 12px;
-  padding-top: 30px;
+  padding-top: 26px;
   background-color: white;
 }
 .featured_matches .slider .slide .team_score .team {
@@ -193,6 +266,9 @@
   font-size: 12px;
   color: black;
   text-align: center;
+  background-color: white;
+  height: 100%;
+  padding-top: 6px;
 }
 .featured_matches .slider .slide .explore {
   position: absolute;
@@ -230,4 +306,4 @@
 }
 .featured_matches .slider .slide:hover .explore {
   display: block;
-}/*# sourceMappingURL=index.css.map */
+}

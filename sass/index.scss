@@ -1,7 +1,84 @@
 $separator_color: rgb(220, 220, 220);
 @import "./variables";
+.slick-arrow
+{
+    height: 48px!important;
+    width: 48px!important;
+    background-color: white!important;
+    border-radius: 50%!important;
+    color: $orange_color!important;
+    z-index: 3;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 8px 0px;
+    top: 100px!important;
+    &::after
+    {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 32px;
+    }
+    
+}
+.slick-prev
+{
+    left: -17px!important;
+    &::after
+    {
+        content: '\2039';
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 32px;
+    }
+}
+.slick-next
+{
+    right: -17px!important;
+    &::after
+    {
+        content: '\203A';
+        position: absolute;
+        right: 18px;
+        top: 20px;
+        font-size: 32px;
+    }
+}
 .featured_matches
 {
+    position: relative;
+    .background
+    {
+        background-color: $blue_color;
+        height: 167px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        z-index: -2;
+    }
+    .header
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        .title
+        {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .feature_slider_dots
+        {
+            .slick-dots
+            {
+                position: unset;
+                color: white;
+                button::before
+                {
+                    color: white;
+                }
+            }
+        }
+    }
     .slider
     {
         list-style-type: none;
@@ -10,6 +87,7 @@ $separator_color: rgb(220, 220, 220);
             position: relative;
             display: grid;
             height: 226px;
+            margin: 0px 8px;
             .card
             {
                 height: 200px;
@@ -18,7 +96,6 @@ $separator_color: rgb(220, 220, 220);
                 border: 1px solid #0000001a;
                 position: relative;
                 display: block;
-                background-color: white;
                 z-index: 10;
             }
             a
@@ -63,7 +140,7 @@ $separator_color: rgb(220, 220, 220);
                 display: flex;
                 justify-content: space-between;
                 padding: 0px 12px;
-                padding-top: 30px;
+                padding-top: 26px;
                 background-color: white;
                 .team
                 {
@@ -177,6 +254,9 @@ $separator_color: rgb(220, 220, 220);
                 font-size: 12px;
                 color: black;
                 text-align: center;
+                background-color: white;
+                height: 100%;
+                padding-top: 6px;
             }
             .explore
             {
@@ -222,3 +302,4 @@ $separator_color: rgb(220, 220, 220);
         }
     }
 }
+

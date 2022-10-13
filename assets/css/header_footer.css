@@ -143,6 +143,7 @@ header .right .user .avatar {
 }
 
 footer {
+  display: none;
   bottom: 0px;
   left: 0px;
   width: 100%;
@@ -340,4 +341,4 @@ footer .bottom ul a {
 }
 .header_mobile_nav ul a span {
   font-size: 12px;
-}/*# sourceMappingURL=header_footer.css.map */
+}

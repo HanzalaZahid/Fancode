@@ -20,14 +20,15 @@ section {
 }
 @media screen and (max-width: 1104px) {
   .wrapper {
-    width: 100%;
+    width: 100vw;
     padding-left: 40px;
     padding-right: 40px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 772px) {
   .wrapper {
-    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -35,4 +36,4 @@ section {
 
 .page_content {
   padding-top: 57.3px;
-}/*# sourceMappingURL=style.css.map */
+}

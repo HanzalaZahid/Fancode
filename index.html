@@ -13,6 +13,16 @@
 
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- PLUGINS -->
+        <!-- SLICK -->
+    <link rel="stylesheet" href="./assets/plugins/slickjs/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/slickjs/slick/slick-theme.css">
+    <script src="./assets/plugins/slickjs/slick/slick.min.js"></script>
+
+    <!-- JAVASCRIPTS -->
+    <script src="./assets/javascripts/slick.js" defer></script>
 </head>
 <body>
     <header>
@@ -53,8 +63,923 @@
     </header>
     <div class="page_content">
         <section class="featured_matches">
+            <div class="background"></div>
             <div class="wrapper">
-                <ul class="slider">
+                <div class="header">
+                    <h2 class="title">Featured Matches</h2>
+                    <div class="feature_slider_dots"></div>
+                </div>
+                <ul class="slider featured_slider">
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a href="" class="card">
+                            <div class="thumbnail">
+                                <div class="live">LIVE</div>
+                                <div class="match_title">MATCH 36 SYED MUSTAQ ALI TROPHY, 2022</div>
+                            </div>
+                            <div class="team_score">
+                                <div class="score_card_label">
+                                    SCORECARD
+                                </div>
+                                <div class="team1 team">
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vs">
+                                    <div class="line"></div>
+                                    <div class="icon">V</div>
+                                </div>
+                                <div class="team2 team">
+                                    <div class="results">
+                                        <div class="score">
+                                            <div class="runs">173</div>
+                                            <span>/</span>
+                                            <div class="wickets">3</div>
+                                        </div>
+                                        <div class="overs">
+                                            <div class="over">20</div>
+                                            <span>&nbsp;overs</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <div class="image">
+                                            <img src="./assets/images/team_icon.png" alt="">
+                                        </div>
+                                        <div class="name">CNN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_status">
+                                Sikkim need 84 runs in 30 balls
+                            </div>
+                        </a>
+                        <div class="explore">
+                            <div class="container">
+                                <a href="" class="left">
+                                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                                    <div class="label">Points Table</div>
+                                </a>
+                                <a href="" class="right">
+                                    <div class="label">More Cricket</div>
+                                    <div class="icon"><i class="far fa-arrow-alt-circle-right"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                     <li class="slide">
                         <a href="" class="card">
                             <div class="thumbnail">
