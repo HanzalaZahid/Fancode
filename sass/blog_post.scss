@@ -1,0 +1,136 @@
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.header
+{
+    padding-top: 32px;
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .left
+    {
+        a
+        {
+            text-decoration: none;
+            color: rgb(0,0,0,.6);
+            i
+            {
+                font-size: 22px;
+            }
+            &:hover
+            {
+                i
+                {
+                    color: rgb(0,0,0,.8);
+                }
+            }
+        }
+    }
+}
+.post
+{
+    .thumbnail
+    {
+        margin-top: 22px;
+        margin-bottom: 8px;
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .blog_title
+    {
+        font-size: 28px;
+        font-weight: 600;
+
+    }
+    .blog_info
+    {
+        color: rgb(160, 160, 160);
+        font-size: 14px;
+        font-weight: 400;
+        padding: 8px 0px 10px 0px;
+    }
+    .blog_summery
+    {
+        color: rgb(120,120,120);
+        font-size: 16px;
+        font-style: italic;
+        display: block;
+        line-height: 4;
+        font-family: 'Noto Serif', serif;
+        &::after
+        {
+            content: "";
+            width: 20%;
+            height: 1px;
+            border-bottom: 1px solid red;
+            display: block;
+        }
+    }
+    .blog_content
+    {
+        padding-top: 48px;
+        font-size: 18px;
+        line-height: 1.6;
+        
+        p
+        {
+            font-family: 'Noto Serif', serif;
+            margin-top: 12px;
+        }
+    }
+    .hashtags
+    {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 48px;
+        li
+        {
+            background-color: rgb(240,240,240);
+            color: rgb(120,120,120);
+            font-size: 14px;
+            margin-right: 5px;
+            margin-bottom: 8px;
+            padding: 0px 5px;
+            ::before
+            {
+                content: "#";
+            }
+        }
+    }
+    .company_logo
+    {
+        display: flex;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 26px;
+        margin-bottom: 26px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        .logo
+        {
+            height: 56px;
+            width: 56px;
+            margin-right: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+            img
+            {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .name
+        {
+
+        }
+    }
+}
