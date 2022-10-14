@@ -13,18 +13,14 @@ section
 }
 .wrapper
 {
-    width: 1024px;
+    width: 1024px + 80px;
     max-width: 1024px;
     justify-self: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     @media screen and (max-width: 1104px)
     {
         width: 100vw;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-left: 0;
-        margin-right: 0;
     }
     @media screen and (max-width: 772px)
     {

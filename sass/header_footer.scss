@@ -150,14 +150,14 @@ header
 footer
 {
     // position: absolute;
-    display: none;
+    // display: none;
     bottom: 0px;
     left: 0px;
     width: 100%;
     font-size: 14px;
     text-align: center;
     font-weight: 400;
-    margin-top: 100px;
+    margin-top: 32px;
     @media screen and (max-width: 732px)
     {
         padding-bottom: 53px;

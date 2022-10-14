@@ -14,3 +14,11 @@ $('.event_slider').slick(
         // appendDots: $('.feature_slider_dots'),
     }
 );
+$('.event_detailed_coverage_slider').slick(
+    {
+        slidesToShow: 4,
+        slidesToScroll: 6,
+        // dots: true,
+        // appendDots: $('.feature_slider_dots'),
+    }
+);
