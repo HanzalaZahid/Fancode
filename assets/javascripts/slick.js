@@ -22,3 +22,11 @@ $('.event_detailed_coverage_slider').slick(
         // appendDots: $('.feature_slider_dots'),
     }
 );
+
+// $(window).resize(
+//     ()=>
+//     {
+//         document.querySelector('.featured_matches > .wrapper').style.width = window.innerWidth +"px";
+//         console.log(window.innerWidth)
+//     }
+// )
