@@ -4,22 +4,75 @@ $('.featured_slider').slick(
         slidesToScroll: 3,
         dots: true,
         appendDots: $('.feature_slider_dots'),
+        responsive:
+        [
+            {
+                breakpoint: 890,
+                settings:
+                {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings:
+                {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     }
 );
 $('.event_slider').slick(
     {
         slidesToShow: 3,
         slidesToScroll: 3,
-        // dots: true,
-        // appendDots: $('.feature_slider_dots'),
+        responsive:
+        [
+            {
+                breakpoint: 915,
+                settings:
+                {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings:
+                {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     }
 );
 $('.event_detailed_coverage_slider').slick(
     {
         slidesToShow: 4,
         slidesToScroll: 6,
-        // dots: true,
-        // appendDots: $('.feature_slider_dots'),
+        responsive:
+        [
+            {
+                breakpoint: 930,
+                settings:
+                {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings:
+                {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     }
 );
 

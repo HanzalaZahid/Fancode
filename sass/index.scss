@@ -46,6 +46,13 @@ $separator_color: rgb(220, 220, 220);
 .featured_matches
 {
     position: relative;
+    .wrapper
+    {
+        @media screen and (max-width: 772px)
+    {
+        width: calc(100vw - 80px)!important;
+    }
+    }
     .background
     {
         background-color: $blue_color;
@@ -79,6 +86,15 @@ $separator_color: rgb(220, 220, 220);
                 li
                 {
                     margin: 0;
+                }
+                button
+                {
+                    padding: 0px!important;
+                    @media screen and (max-width: 600px)
+                    {
+                        height: 12px!important;
+                        width: 120px!important;
+                    }
                 }
             }
         }
