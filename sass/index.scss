@@ -46,6 +46,10 @@ $separator_color: rgb(220, 220, 220);
 .featured_matches
 {
     position: relative;
+    @media screen and (max-width: 600px)
+    {
+        padding-bottom: 28px;
+    }
     .wrapper
     {
         @media screen and (max-width: 772px)
@@ -333,6 +337,10 @@ $separator_color: rgb(220, 220, 220);
     {
         max-width: 199.19px;
         width: 199.19px;
+        @media screen and (max-width: 780px)
+        {
+            display: none;
+        }
         .search
         {
             position: relative;
@@ -391,12 +399,47 @@ $separator_color: rgb(220, 220, 220);
             }
         }
     }
+    .mobile_sidebar
+    {
+        display: block;
+        position: fixed;
+        padding-top: 22px;
+        width: 250px!important;
+        max-width: 250px!important;
+        z-index: 5;
+        right: 0px;
+        box-shadow: rgb(0 0 0 / 10%) 0px 0px 8px 0px;
+        height: calc(100vh - 57.3px);
+        top: 57.3px;
+        background-color: $blue_color;
+        .event_list
+        {
+            a
+            {
+                color: white;
+                padding: 10px 10px;
+                &:hover
+                {
+                    background-color: $dark_orange_color;
+                }
+            }
+        }
+        @media screen and (min-width: 780px)
+        {
+            display: none;
+        }
+    }
 }
 
 .content
 {
     padding-left: 28px;
     max-width: calc(100% - 199.19px);
+    @media screen and (max-width: 780px)
+    {
+        padding-left: 0px;
+        max-width: 100%;
+    }
     .event
     {
         padding-bottom: 28px;

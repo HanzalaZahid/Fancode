@@ -19,7 +19,8 @@ $('.featured_slider').slick(
                 settings:
                 {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: false,
                 }
             }
         ]
@@ -40,7 +41,24 @@ $('.event_slider').slick(
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 781,
+                settings:
+                {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 650,
+                settings:
+                {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+            ,
+            {
+                breakpoint: 500,
                 settings:
                 {
                     slidesToShow: 1,
@@ -65,11 +83,19 @@ $('.event_detailed_coverage_slider').slick(
                 }
             },
             {
+                breakpoint: 781,
+                settings:
+                {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
                 breakpoint: 600,
                 settings:
                 {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
             }
         ]
