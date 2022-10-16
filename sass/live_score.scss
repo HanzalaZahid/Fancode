@@ -240,6 +240,10 @@
             }
         }
     }
+    .rotate
+    {
+        transform: rotate(180deg);
+    }
     #scorecard_tab
     {
         .dropdown
@@ -281,6 +285,10 @@
                         height: 24px;
                         width: 24px;
                         cursor: pointer;
+                        i
+                        {
+                            pointer-events: none;
+                        }
                     }
                 }
             }
