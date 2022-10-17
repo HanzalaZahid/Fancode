@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Score</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header_footer.css">
+    <link rel="stylesheet" href="./assets/css/live_score.css">
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- PLUGINS -->
+    <!-- <link rel="stylesheet" href="./assets/plugins/jQueryUI_Tabs/jquery-ui.min.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/plugins/jQueryUI_Tabs/jquery-ui.structure.min.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/plugins/jQueryUI_Tabs/jquery-ui.theme.min.css"> -->
+    <script src="./assets/plugins/jQueryUI_Tabs/jquery-ui.min.js"></script>
+        <!-- SLICK -->
+        <link rel="stylesheet" href="./assets/plugins/slickjs/slick/slick-theme.css">
+        <link rel="stylesheet" href="./assets/plugins/slickjs/slick/slick.css">
+        <script src="./assets/plugins/slickjs/slick/slick.min.js"></script>
+
+    <!-- JAVASCRIPTS -->
+    <script src="./assets/javascripts/live_score.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="left">
+                <a href="" class="logo">
+                    <div class="container">
+                        <img src="./assets/images/logo.svg" alt="fancode_logo">
+                    </div>
+                </a>
+                <div class="navigation">
+                    <ul class="nav_list">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">SCHEDULE</a></li>
+                        <li><a href="">SHOP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <!-- <div class="mobile_app">
+                    <a href="" class="apple_store store_icon">
+                        <img src="./assets/images/icon-play-store.png" alt="">
+                    </a>
+                    <a href="" class="play_store store_icon">
+                        <img src="./assets/images/icon-app-store.png" alt="">
+                    </a>
+                    <a href="" class="label">Get The App</a>
+                </div>
+                <div class="notifications">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <a href="" class="user">
+                    <div class="avatar"><i class="fa-regular fa-circle-user"></i></div>
+                    <div class="label">Login/Register</div>
+                </a> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="page_content">
+        <div class="wrapper">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#live_tab">Live</a></li>
+                    <li><a href="#upcomming_tab">Upcomming</a></li>
+                </ul>
+                <div id="live_tab">
+                    <span>THIS IS LIVE TAB</span>
+                    <div class="event">
+                        <div class="header">
+                            <h2 class="title"><a href="">European Cricket Championship, 2022</a></h2>
+                            <div class="see_more_button">
+                                <a href="">SEE MORE</a>
+                            </div>
+                        </div>
+                        <div class="slider event_page_slider">
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="upcomming_tab">
+                    <span>THIS IS UPCOMMING TAB</span>
+                    <div class="event">
+                        <div class="header">
+                            <h2 class="title"><a href="">European Cricket Championship, 2022</a></h2>
+                            <div class="see_more_button">
+                                <a href="">SEE MORE</a>
+                            </div>
+                        </div>
+                        <div class="slider event_page_slider">
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="" class="container">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/thumbnail_common.webp" alt="">
+                                        <div class="thumbnail_foreground">
+                                            <div class="footer">
+                                                <div class="left catagory">TOP STORY</div>
+                                                <div class="right time">
+                                                    <i class="fas fa-play"></i>
+                                                    01:47
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat!</h3>
+                                        <div class="stats">
+                                            <div class="item time">4 hours ago</div>
+                                            <div class="item views">2.4k Views</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <a href="" class="logo">
+                <img src="./assets/images/logo.svg" alt="">
+            </a>
+            <div class="social">
+                <div class="label">Follow us on</div>
+                <div class="icons">
+                    <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="chat_us">
+                <div class="label">Connect with us</div>
+                <a href="" class="chat">
+                    <div class="logo"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="label">CHAT WITH US</div>
+                </a>
+            </div>
+        </div>
+        <div class="bottom">
+            <address>
+                Unit No. 1201-1202, 12th Floor, Wing A, One BKC, G Block, Plot No.66, Bandra Kurla Complex,Bandra- Mumbai City MH 400051 IN
+            </address>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Career |</a></li>
+                    <li><a href="">Help Desk |</a></li>
+                    <li><a href="">T&Cs |</a></li>
+                    <li><a href="">Privacy Policy |</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="header_mobile_nav">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <a href="" class="active">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-shop"></i>
+                    <span>Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <span>More</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $("#tabs").tabs();
+    </script>
+    <script src="./assets/javascripts/slick.js"></script>
+</body>
+</html>

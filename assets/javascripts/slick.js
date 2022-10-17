@@ -102,10 +102,45 @@ $('.event_detailed_coverage_slider').slick(
     }
 );
 
-// $(window).resize(
-//     ()=>
-//     {
-//         document.querySelector('.featured_matches > .wrapper').style.width = window.innerWidth +"px";
-//         console.log(window.innerWidth)
-//     }
-// )
+$('.event_page_slider').slick(
+    {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive:
+        [
+            {
+                breakpoint: 980,
+                settings:
+                {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 700,
+                settings:
+                {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings:
+                {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    }
+);
+
+$('.ui-tabs-anchor').click(
+    ()=>
+    {
+        console.log("CLICK")
+        $('.event_page_slider').slick('refresh');
+        $('.event_page_slider').slick('resize');
+    }
+)
