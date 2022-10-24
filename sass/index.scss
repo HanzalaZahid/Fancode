@@ -396,10 +396,12 @@ $separator_color: rgb(220, 220, 220);
 {
     padding-left: 28px;
     max-width: calc(100% - 199.19px);
+    width: calc(100% - 199.19px);
     @media screen and (max-width: 780px)
     {
         padding-left: 0px;
         max-width: 100%;
+        min-width: 100%;
     }
     
     .event_detailed_coverage

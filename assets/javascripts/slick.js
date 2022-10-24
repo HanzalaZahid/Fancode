@@ -144,3 +144,6 @@ $('.ui-tabs-anchor').click(
         $('.event_page_slider').slick('resize');
     }
 )
+
+
+// console.log($(".event").children().length)
