@@ -140,8 +140,8 @@ $('.ui-tabs-anchor').click(
     ()=>
     {
         console.log("CLICK")
-        $('.event_page_slider').slick('refresh');
-        $('.event_page_slider').slick('resize');
+        $('.event_slider').slick('refresh');
+        $('.event_slider').slick('resize');
     }
 )
 

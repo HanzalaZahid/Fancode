@@ -1,6 +1,10 @@
 $separator_color: rgb(220, 220, 220);
 @import "./variables";
 
+.wrapper
+{
+    display: unset;
+}
 .featured_matches
 {
     position: relative;
